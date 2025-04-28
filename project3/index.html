@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Music Player</title>
+
+  <!-- Internal CSS styles -->
+  <style>
+    body {
+      background: url(./images/background.jpg);
+      background-size: cover;
+    }
+
+    #cp {
+      width: 600px;
+      margin: 100px auto 0 auto;
+      text-align: center;
+    }
+
+    button {
+      background-color: #4CAF50; 
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      width: 100px;
+      margin: 5px;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    #message {
+      font-weight: bold;
+      color: #ff5722;
+    }
+  </style>
+
+  <!-- Include jQuery from CDN -->
+  <script src="//code.jquery.com/jquery.min.js"></script>
+
+  <!-- Include your custom JavaScript file -->
+  <script src="app.js"></script>
+
+</head>
+<body>
+  <!-- Control Panel will go here -->
+  <div id="cp">
+    <button id="play">Play</button>
+    <button id="stop">Stop</button>
+    <button id="pause">Pause</button>
+    <button id="mute">Mute</button>
+    <button id="unmute">Unmute</button>
+    <button id="volUp">Volume Up</button>
+    <button id="volDown">Volume Down</button>
+
+    <p id="message">Waiting</p>
+  </div>
+
+  <!-- Audio player will go here -->
+  <audio id="player">
+    <source src="music/song1.mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>
